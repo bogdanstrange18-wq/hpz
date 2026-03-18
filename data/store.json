@@ -1,0 +1,125 @@
+{
+  "boards": [
+    {
+      "id": "announcements",
+      "icon": "A",
+      "name": "Анонсы",
+      "description": "Релизы, дорожная карта и ключевые объявления.",
+      "accent": "#f4a261"
+    },
+    {
+      "id": "product",
+      "icon": "P",
+      "name": "Продукт",
+      "description": "Идеи, UX, спорные решения и быстрый фидбек.",
+      "accent": "#2a9d8f"
+    },
+    {
+      "id": "dev",
+      "icon": "D",
+      "name": "Разработка",
+      "description": "Технические детали, качество интерфейса и архитектура.",
+      "accent": "#84a98c"
+    },
+    {
+      "id": "lounge",
+      "icon": "L",
+      "name": "Лаунж",
+      "description": "Шоукейсы, вдохновение и неформальные темы сообщества.",
+      "accent": "#e76f51"
+    }
+  ],
+  "topics": [
+    {
+      "id": "topic-mmvyswfe-5ml4a",
+      "boardId": "announcements",
+      "title": "Test",
+      "tags": [
+        "Test"
+      ],
+      "pinned": false,
+      "solved": false,
+      "likes": 1,
+      "views": 1,
+      "createdAt": "2026-03-18T11:35:28.298Z",
+      "updatedAt": "2026-03-18T11:36:13.106Z",
+      "posts": [
+        {
+          "id": "post-mmvyswfe-cefar",
+          "author": "DevBoggy",
+          "role": "Разработчик",
+          "prefix": "DEV",
+          "createdAt": "2026-03-18T11:35:28.298Z",
+          "likes": 0,
+          "content": "Это тестовая тема чтоб посмотреть как все выглядит"
+        }
+      ]
+    },
+    {
+      "id": "topic-mmvypivq-zsxk0",
+      "boardId": "announcements",
+      "title": "Test",
+      "tags": [
+        "Test"
+      ],
+      "pinned": false,
+      "solved": false,
+      "likes": 0,
+      "views": 1,
+      "createdAt": "2026-03-18T11:32:50.774Z",
+      "updatedAt": "2026-03-18T11:32:50.774Z",
+      "posts": [
+        {
+          "id": "post-mmvypivq-qkjpt",
+          "author": "DevOps",
+          "role": "Автор темы",
+          "prefix": "",
+          "createdAt": "2026-03-18T11:32:50.774Z",
+          "likes": 1,
+          "content": "Test"
+        }
+      ]
+    }
+  ],
+  "loginAudit": [
+    {
+      "id": "login-mmvyq6lk-bdqbx",
+      "login": "DevBoggy",
+      "prefix": "DEV",
+      "loggedAt": "2026-03-18T11:33:21.512Z",
+      "ip": "127.0.0.1",
+      "country": "Локальный вход",
+      "city": "Локальный вход",
+      "status": "local client",
+      "source": "server socket"
+    }
+  ],
+  "topicActors": {
+    "topic-mmvypivq-zsxk0": {
+      "viewers": [
+        "guest:127.0.0.1:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+      ],
+      "likers": []
+    },
+    "topic-mmvyswfe-5ml4a": {
+      "viewers": [
+        "user:DevBoggy"
+      ],
+      "likers": [
+        "user:DevBoggy"
+      ]
+    }
+  },
+  "postActors": {
+    "post-mmvypivq-qkjpt": {
+      "viewers": [],
+      "likers": [
+        "guest:127.0.0.1:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+      ]
+    },
+    "post-mmvyswfe-cefar": {
+      "viewers": [],
+      "likers": []
+    }
+  }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeoChat Forum</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="backdrop" aria-hidden="true"></div>
+
+<div class="shell">
+  <aside class="rail">
+    <div class="brandCard">
+      <p class="eyebrow">Community board</p>
+      <h1>NeoChat Forum</h1>
+      <p class="brandCopy">Живой форум для анонсов, фидбека и спокойных продуктовых обсуждений.</p>
+    </div>
+
+    <section class="railSection">
+      <div class="sectionTitle">Аккаунт</div>
+      <div id="accountPanel" class="accountPanel" aria-live="polite"></div>
+    </section>
+
+    <section class="railSection">
+      <div class="sectionTitle">Разделы</div>
+      <div id="boardList" class="boardList" aria-label="Разделы форума"></div>
+    </section>
+
+    <section class="railSection">
+      <div class="sectionTitle">Пульс форума</div>
+      <div id="forumStats" class="statGrid"></div>
+    </section>
+
+    <button id="resetDemoBtn" class="ghostButton fullWidth" type="button">Сбросить демо-данные</button>
+  </aside>
+
+  <main class="workspace">
+    <section class="topicsPane panel">
+      <header class="paneHeader">
+        <div>
+          <p id="boardEyebrow" class="eyebrow">Раздел</p>
+          <h2 id="boardTitle">Темы</h2>
+          <p id="boardDescription" class="subtleText"></p>
+        </div>
+        <button id="focusComposerBtn" class="accentButton" type="button">Новая тема</button>
+      </header>
+
+      <div class="toolbar">
+        <label class="searchField" for="searchInput">
+          <span>Поиск</span>
+          <input id="searchInput" type="search" placeholder="Поиск по темам, тегам и сообщениям">
+        </label>
+
+        <div class="chipRow" role="tablist" aria-label="Сортировка тем">
+          <button class="chip is-active" data-sort="latest" type="button">Свежие</button>
+          <button class="chip" data-sort="popular" type="button">Популярные</button>
+          <button class="chip" data-sort="unanswered" type="button">Без ответов</button>
+        </div>
+      </div>
+
+      <div id="topicSummary" class="summaryBar"></div>
+      <div id="topicList" class="topicList" aria-live="polite"></div>
+    </section>
+
+    <section class="threadPane panel">
+      <div id="threadView" class="threadView"></div>
+    </section>
+
+    <aside class="composePane panel">
+      <header class="paneHeader compact">
+        <div>
+          <p class="eyebrow">Создание темы</p>
+          <h2>Запустить обсуждение</h2>
+        </div>
+      </header>
+
+      <form id="topicForm" class="stackedForm">
+        <label>
+          <span>Раздел</span>
+          <select id="topicBoardSelect" name="board"></select>
+        </label>
+
+        <label>
+          <span>Автор</span>
+          <input id="topicAuthorInput" name="author" type="text" maxlength="32" placeholder="Ваше имя">
+        </label>
+
+        <label>
+          <span>Заголовок</span>
+          <input id="topicTitleInput" name="title" type="text" maxlength="90" placeholder="О чем хотите поговорить?">
+        </label>
+
+        <label>
+          <span>Теги</span>
+          <input id="topicTagsInput" name="tags" type="text" placeholder="ui, feedback, release">
+        </label>
+
+        <label>
+          <span>Первое сообщение</span>
+          <textarea id="topicContentInput" name="content" rows="7" placeholder="Опишите контекст, вопрос или идею"></textarea>
+        </label>
+
+        <div class="formActions">
+          <button class="accentButton fullWidth" type="submit">Опубликовать тему</button>
+          <button id="fillExampleBtn" class="ghostButton fullWidth" type="button">Заполнить пример</button>
+        </div>
+
+        <p id="formStatus" class="statusText" aria-live="polite"></p>
+      </form>
+
+      <div id="adminPanel" class="adminCard hidden" aria-live="polite"></div>
+
+      <div class="helperCard">
+        <p class="sectionTitle">Что делает форум законченным</p>
+        <ul class="tipList">
+          <li>Понятные разделы и живая лента тем.</li>
+          <li>Полноценный просмотр треда с ответами.</li>
+          <li>Серверное хранение тем, сессий и журнала входов.</li>
+        </ul>
+      </div>
+
+      <div class="activityCard">
+        <div class="sectionTitle">Последняя активность</div>
+        <div id="activityFeed" class="activityFeed"></div>
+      </div>
+    </aside>
+  </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "neochat-forum",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NeoChat forum with local server-side auth and admin audit tools.",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
